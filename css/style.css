@@ -260,15 +260,26 @@ main {
     margin: 0 auto; }
     .arrivals .row .box {
       display: none;
-      margin-left: 0;
-      margin-top: 0;
+      margin-left: 90px;
+      margin-top: -43px;
       position: absolute; }
-    .arrivals .row div {
-      /*			&:hover{
-      				.box{
-      					display:block;
-      				}
-      			}*/ }
+      .arrivals .row .box span {
+        border: 0px;
+        display: inline-block;
+        padding-top: 12px;
+        padding-right: 14px;
+        width: 40px;
+        height: 40px;
+        margin: -1px;
+        text-align: center;
+        background-color: #fff; }
+        .arrivals .row .box span img {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          margin: 0px; }
+    .arrivals .row div:hover .box {
+      display: block; }
     .arrivals .row h1 {
       display: inline-block;
       font-size: 25px;
@@ -338,6 +349,7 @@ main {
     margin: 13px;
     line-height: 16px; }
   .arrivals .addon span {
+    text-align: center;
     margin-right: 10px;
     width: 36px;
     height: 36px;
@@ -347,7 +359,9 @@ main {
     float: left;
     margin-left: 15px;
     margin-top: 18px;
-    line-height: 14px; }
+    line-height: 14px;
+    padding-left: 2px;
+    padding-top: 4px; }
   .arrivals .addon .col-md-6 h3 {
     display: inline-block;
     font-family: 'Aller';
